@@ -1,0 +1,40 @@
+body{
+    width: 100%;
+    overflow: hidden;
+}
+.rectangle{
+    width: 100%;
+    height: 40vh;
+    
+    
+}
+.r1{
+    background-color: green;
+    animation: slide-in 1s linear 0.2s 1 alternate  ;
+    border: 1px solid black;
+}
+
+.r2{
+    background-color: blue;
+    animation: slide-out 2s linear 0.2s 1 alternate forwards ;
+}
+
+@keyframes slide-in {
+    0%{
+        transform: translateX(-100px);
+
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-out {
+    0%{
+        transform: translateX(0px);
+
+    }
+    100%{
+        transform: translateX(+2000px);
+    }
+}
